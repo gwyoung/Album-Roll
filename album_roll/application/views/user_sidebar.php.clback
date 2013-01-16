@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+	<div id="sidebar_header_text">my stuff</div>
+	<div id="sidebar_text">
+		<?php ?>
+		1. Name:
+	</div>
+</html>

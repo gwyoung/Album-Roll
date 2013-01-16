@@ -1,0 +1,888 @@
+body {
+	font-size:100%;
+	font-family:"Myriad Pro", Helvetica, sans-serif;
+	background-color:#ccffff;
+	color:#ffffff;
+}
+
+body.wait *, body.wait {
+	cursor:wait !important;
+}
+	
+p {
+	font-size:0.8em;
+}
+
+h2 {
+	font-size:1em;
+}
+
+button{
+	color:#bbffff;
+	border:1px solid #bbffff;
+	cursor: hand;
+	cursor: pointer;
+	background-color:transparent;
+}
+
+.square_button{
+	width:23px;
+	margin:2px;
+}
+
+.edit_icon{
+	width:15px;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.plus_minus_icon{
+	width:15px;
+	padding-left:10px;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.save_icon{
+	width:20px;
+	margin-left:auto;
+	margin-right:auto;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.x_icon{
+	width:10px;
+	margin:2px;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.insert_icon{
+	width:15px;
+	height:15px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	display:block;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.remove_album_icon{
+	width:15px;
+	height:15px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	display:block;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.remove_comment_icon{
+	width:15px;
+	height:15px;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.back_next_icon{
+	width:15px;
+	height:15px;
+	cursor:hand;
+	cursor:pointer;
+}
+
+.search_icon{
+	width:15px;
+	height:15px;
+	cursor:hand;
+	cursor:pointer;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+}
+
+textarea{
+	resize:none;
+	font-family:"Myriad Pro", Helvetica, sans-serif;
+}
+
+#header{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	height:149px;
+}
+
+img {
+	padding:0px;
+	border:0px;
+	margin:0px;
+}
+
+#content{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+	background-color:#ffffff;
+}
+
+#left_column{
+	width:150px;
+	background-color:#006666;
+	float:left;
+	padding: 0 0 20000px 0;
+	margin: 0 0 -20000px 0;
+}
+
+#right_column{
+	width:150px;
+	background-color:#006666;
+	float:right;
+	padding: 0 0 20000px 0;
+	margin: 0 0 -20000px 0;
+	position:relative;
+}
+
+#left_column_content{
+	background-color:inherit;
+	text-align:center;
+	width:150px;
+}
+
+#right_column_content{
+	background-color:inherit;
+	text-align:center;
+	width:150px;
+}
+
+#left_column_content.sticky {
+    position: fixed;
+    top: 0;
+}
+
+#right_column_content.sticky{
+	position:fixed;
+	top: 0;
+}
+
+#center.sticky{
+	position:relative;
+	left:150px;
+}
+
+#center{
+	width:500px;
+	float:left;
+	background-color:#ffffff;
+	padding: 0 0 20000px 0;
+	margin: 0 0 -20000px 0;
+}
+
+#footer{
+	color:#006666;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+
+#about_link{
+	width:200px;
+	float:left;
+	text-align:left;
+	color:#006666;
+}
+
+#contact_link{
+	width:200px;
+	float:left;
+	text-align:center;
+	color:#006666;
+}
+
+#invite_link{
+	width:200px;
+	float:left;
+	text-align:center;
+	color:#006666;
+}
+
+#bug_link{
+	width:200px;
+	float:left;
+	text-align:right;
+	color:#006666;
+}
+
+a:link{
+	color:#bbffff;
+ 	text-decoration: none;
+} 
+a:visited{
+	color:#bbffff;
+  	text-decoration: none;
+}
+a:hover{
+	color:#bbffff;
+  	text-decoration: none;
+	font-weight:bold;
+	cursor:hand;
+	cursor:pointer;
+}
+a:active{
+	color:#bbffff;
+  	text-decoration: none; 
+}
+
+a{
+	color:#bbffff;
+}
+
+.metadata{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.list_items{
+	padding-bottom:20px;
+}
+
+.metadata_main{
+	width:460px;
+	background-color:#339999;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	font-size:.8em;
+	display:table;
+}
+
+.content_header{
+	width:460px;
+	background-color:#339999;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	font-size:1.5em;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.sub_content_header{
+	width:450px;
+	background-color:#339999;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:10px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.list_item{
+	width:420px;
+	background-color:#006666;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	padding:5px;
+}
+
+.album_list_item{
+	width:420px;
+	background-color:#006666;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	padding:5px;
+}
+
+.form{
+	display:table;
+	margin-top:10px;
+}
+
+.form_name{
+	width:150px;
+	text-align:right;
+	display:table-cell;
+	float:left;
+	margin-top:4px;
+	font-size:.8em;
+}
+
+.form_field{
+	width:250px;
+	display:table-cell;
+	color:#ff8e8e;
+	text-align:center;
+	float:right;
+	font-size:.8em;
+}
+
+.form_submit{
+	width:120px;
+	color:#bbffff;
+	border:1px solid #bbffff;
+	background-color:transparent;
+	float:none;
+	display:block;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.sidebar_text{
+	padding:5px;
+	padding-top:7px;
+	padding-bottom:7px;
+	font-size:0.9em;
+	text-align:center;
+}
+
+.sidebar_options{
+	padding-top:11px;
+	padding-bottom:11px;
+}
+
+.error_text{
+	color:#ff8e8e;
+	margin-top:3px;
+	margin-bottom:5px;
+	text-align:center;
+}
+
+.success_text{
+	color:#ffffff;
+	margin-top:3px;
+	margin-bottom:5px;
+	text-align:center;
+}
+
+.sidebar_field{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:0.8em;
+	padding-bottom:12px;
+}
+
+.sidebar_link{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.sidebar_header_text{
+	font-size:1.2em;
+	text-align:center;
+	margin-top:11px;
+	margin-bottom:5px;
+	padding-bottom:3px;
+}
+
+.large_image_div{
+	padding:10px;
+	float:left;
+	background-color:inherit;
+	display:table-cell;
+}
+
+.large_image{
+	width:200px;
+	height:200px;
+	display:block;
+}
+
+.metadata_content{
+	background-color:inherit;
+	margin-top:10px;
+	width:240px;
+	float:left;
+	display:table-cell;
+}
+
+.metadata_name{
+	padding:5px;
+	text-align:center;
+	background-color:inherit;
+	font-size:1.3em;
+}
+
+.metadata_line{
+	padding:5px;
+	text-align:center;
+	background-color:inherit;
+}
+
+.metadata_blurb{
+	padding:5px;
+	text-align:center;
+	background-color:inherit;
+}
+
+.metadata_list{
+	background-color:#339999;
+	width:460px;
+	padding-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	display:table;
+	font-size:.8em;
+}
+
+.metadata_list_button{
+	float:left;
+	display:table-cell;
+	background-color:inherit;
+}
+
+.metadata_list_title{
+	float:left;
+	width:100px;
+	padding-left:10px;
+	background-color:inherit;
+	display:table-cell;
+	font-weight:bold;
+}
+
+.metadata_list_content{
+	width:320px;
+	padding-bottom:10px;
+	padding-right:5px;
+    float:left;
+	background-color:inherit;
+	display:table-cell;
+	text-align:center;
+}
+
+.metadata_list_item{
+	padding-right:10px;
+}
+
+.metadata_list_form{
+	display: none;
+	background-color:inherit;
+	width:460px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#339999;
+	margin-bottom:10px;
+	padding-bottom:5px;
+	font-size:.8em;
+}
+
+.list_form_content{
+	padding-left:130px;
+}
+
+.blurb_text_area{
+	display:none;
+}
+
+.sub_header{
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	font-size:.9em;
+	text-align:center;
+}
+
+.sub_form{
+	display:none;
+}
+
+#confirm_delete_text{
+	padding-top:3px;
+	padding-bottom:5px;
+	text-align:center;
+	font-size:.9em;
+}
+
+.file_form{
+	color:#ffffff;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.instructions{
+	padding:10px;
+	text-align:center;
+	font-size:.9em;
+}
+
+#uploaded_image{
+	width:400px;
+}
+
+.uploaded_image_div{
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.crop_preview_div{
+	width:200px;
+	height:200px;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#list_title{
+	font-size:1.3em;
+	margin-top:2px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.average_rating{
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	margin-bottom:5px;
+	font-size:.6em;
+	font-weight:bold;
+	text-align:center;
+}
+
+#average_rating{
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	margin-bottom:5px;
+	font-size:.8em;
+	font-weight:bold;
+	text-align:center;
+}
+
+#star_rating{
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:2px;
+	margin-top:5px;
+}
+
+#list_title_input{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	width:400px;
+	text-align:center;
+}
+
+.title_edit_save{
+	margin-left:auto;
+	margin-right:auto;
+	width:15px;
+	margin-bottom:5px;
+}
+
+#title_edit_div{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+}
+
+.ordinal{
+	padding:5px;
+	width:20px;
+	display:table-cell;
+	font-size:.9em;
+	height:20px;
+	text-align:center;
+	float:left;
+	margin-top:0px;
+}
+
+.medium_image_div{
+	padding:5px;
+	background:inherit;
+	display:table-cell;
+	width:120px;
+	float:left;
+}
+
+.quarter_image{
+	width:55px;
+	height:55px;
+	display:block;
+}
+
+.number_square{
+	width:55px;
+	height:55px;
+	background-color:#ffffff;
+	display:block;
+}
+
+.list_item_table{
+	display:table;
+	position:relative;
+}
+
+.album_list_item_table{
+	display:table;
+}
+
+.list_item_metadata{
+	width:280px;
+	background:inherit;
+	display:table-cell;
+	padding-left:5px;
+	padding-right:5px;
+	float:left;
+}
+
+.album_list_item_metadata{
+	width:250px;
+	background:inherit;
+	display:table-cell;
+	padding-left:5px;
+	padding-right:5px;
+	float:left;
+}
+
+.list_item_title{
+	padding:5px;
+	text-align:center;
+	margin-top:0px;
+	font-size:.9em;
+	background:inherit;
+}
+
+.list_item_blurb{
+	padding:5px;
+	text-align:center;
+	font-size:.8em;
+	background:inherit;
+}
+
+#list_blurb{
+	padding-bottom:5px;
+}
+
+.instructions{
+	padding:10px;
+	text-align:center;
+	font-size:.8em;
+}
+
+.medium_image{
+	width:120px;
+	height:120px;
+	display:block;
+}
+
+.comment_image{
+	padding:3px;
+	width:115px;
+	height:115px;
+	display:block;
+}
+
+.star_rating{
+	width:100px;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#list_of_albums{
+	width:430px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.centered_textarea{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.page_navigation{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	background-color:#006666;
+	display:table;
+	height:20px;
+	position:relative;
+	padding-top:3px;
+}
+
+.page_number{
+	text-align:center;
+	font-size:.8em;
+	width:338px;
+	display:table-cell;
+}
+
+.back_button{
+	padding:5px;
+	padding-left:8px;
+	width:15px;
+	height:15px;
+	display:table-cell;
+}
+
+.next_button{
+	padding:5px;
+	padding-right:8px;
+	width:15px;
+	height:15px;
+	display:table-cell;
+}
+
+.horizontal_box{
+	width:440px;
+	background-color:#006666;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+.horizontal_box_header{
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:5px;
+}
+
+#horizontal_content{
+	display:table;
+}
+
+.horizontal_display{
+	width:352px;
+	display:table-cell;
+}
+
+.horizontal_display_item{
+	padding:6px;
+	display:table-cell;
+	width:84px;
+}
+
+.small_image{
+	width:84px;
+	height:84px;
+	display:block;
+}
+
+.small_image_no_block{
+	width:84px;
+	height:84px;
+}
+
+.paragraph{
+	padding:10px;
+	font-size:.8em;
+}
+
+#album_of_the_week{
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+	height:300px;
+}
+
+.huge_image{
+	width:300px;
+	height:300px;
+	display:block;
+}
+
+.sidebar_image_div{
+	padding:5px;
+	width:110px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.sidebar_image{
+	display:block;
+	width:110px;
+	height:110px;
+}
+
+.checkbox_text{
+	color:#ffffff;
+}
+
+.sort_bar{
+	width:390px;
+	background-color:#006666;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding:5px;
+	text-align:center;
+	display:table;
+	font-size:.8em;
+}
+
+.sort_text{
+	width:120px;
+	text-align:right;
+	display:table-cell;
+}
+
+.sort_options{
+	width:270px;
+}
+
+#sample_image{
+	width:200px;
+	display:block;
+	margin-top:5px;
+	margin-bottom:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#confirm_delete_text{
+	padding:5px;
+	margin-bottom:5px;
+}
+
+#album_of_the_week_background{
+	width:360px;
+}
+
+.defaultTextActive{ 
+	color: #a1a1a1;
+	font-style: italic;
+	width:210px;
+}

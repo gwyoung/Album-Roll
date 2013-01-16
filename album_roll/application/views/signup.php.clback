@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<div id="metadata">
+		<h1>sign up</h1>
+	</div>
+	<div id="list_item">
+		<div id="signup">
+			<div id="errors">
+				<?php echo validation_errors();?>
+			</div>
+		</div>
+	</div>
+</html>

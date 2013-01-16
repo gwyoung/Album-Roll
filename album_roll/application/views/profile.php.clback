@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<div id="metadata">
+		<div id="image_div">
+			<img src="<?php echo $user->image_url; ?>"/>
+		</div>
+		<div id="user_metadata">
+			<div id="metadata_name"></div>
+			<div id="metadata_line"></div>
+			<div id="metadata_blurb"></div>	
+		</div>
+		<div id="metadata_list">
+			<div id="metadata_list_title">Links:</div>
+			<div id="metadata_list_content"></div>
+		</div>
+		$user->image_url;
+	</div>
+</html>
